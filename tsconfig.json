@@ -2,7 +2,7 @@
   "compilerOptions": {
     /* Language & runtime */
     "target": "ES2022",
-    "lib": ["ES2022"],
+    "lib": ["ES2022", "dom"],
 
     /* Node ESM */
     "module": "ES2022",
