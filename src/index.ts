@@ -6,14 +6,14 @@ import cors from "cors";
 import express from "express";
 import { toNodeHandler } from "better-auth/node";
 
-import subjectsRouter from "./routes/subjects";
+import subjectsRouter from "./routes/subjects.js";
 // import usersRouter from "./routes/users.js";
 // import classesRouter from "./routes/classes.js";
 // import departmentsRouter from "./routes/departments.js";
 // import statsRouter from "./routes/stats.js";
 // import enrollmentsRouter from "./routes/enrollments.js";
 
-import securityMiddleware from "./middleware/security";
+import securityMiddleware from "./middleware/security.js";
 import { auth } from "./lib/auth";
 
 const app = express();
