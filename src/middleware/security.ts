@@ -55,12 +55,12 @@ const securityMiddleware = async (
 
     const decision = await client.protect(arcjetRequest);
 
-    if (decision.isDenied() && decision.reason.isBot()) {
-      return res.status(403).json({
-        error: "Forbidden",
-        message: "Automated requests are not allowed",
-      });
-    }
+    // if (decision.isDenied() && decision.reason.isBot()) {
+    //   return res.status(403).json({
+    //     error: "Forbidden",
+    //     message: "Automated requests are not allowed",
+    //   });
+    // }
 
     if (decision.isDenied() && decision.reason.isShield()) {
       return res.status(403).json({
